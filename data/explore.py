@@ -12,6 +12,8 @@ Single brackets df["revenue"] returns a Series object, while double brackets df[
 
 3. If a colleague who only knows Excel asked you to explain why you would choose pandas for this task, what is the single most compelling reason you would give? 
 
+Speed and efficiency because pandas can handle large datasets and perform complex data manipulations much faster than Excel.
+
 """
 
 # ----- Exercise 1 -----
