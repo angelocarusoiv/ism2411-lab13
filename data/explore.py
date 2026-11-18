@@ -54,3 +54,13 @@ print(df['region'].unique())
 
 # Method 2
 print(df['region'].value_counts())
+
+# ----- Exercise 7 -----
+
+df_subset = df[['region', 'product', 'revenue']]
+
+print(df_subset.shape)
+
+# ----- Exercise 8 -----
+
+df.to_csv('data/explored.csv', index=False)
