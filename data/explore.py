@@ -33,3 +33,24 @@ print(south.head())
 
 top_5 = df.sort_values('revenue', ascending=False).head(5)
 print(top_5)
+
+# ----- Exercise 4 -----
+
+big_south = df[(df['region'] == 'South') & (df['revenue'] > 1000)]
+
+print(len(big_south))
+print(big_south.head())
+
+# ---- Exercise 5 -----
+
+df['per_unit'] = df['revenue'] / df['quantity']
+print(df[['per_unit']].head())
+print(df['per_unit'].mean())
+
+# ----- Exercise 6 -----
+
+# Method 1
+print(df['region'].unique())
+
+# Method 2
+print(df['region'].value_counts())
